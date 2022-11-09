@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let helyesYear= false;
         let helyesPrice = false;
         let helyesHeight =false;
-        console.log(year);
-        console.log(price);
         if (!nameRegex.test(title.value)) {
             helyesName=false;
             document.getElementById('wrongName')!.textContent='Hibás név!';
@@ -50,12 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
             parseInt((document.getElementById('creationYear') as HTMLInputElement).value),
             parseInt((document.getElementById('inputPrice') as HTMLInputElement).value),
             parseInt((document.getElementById('statueHeight') as HTMLInputElement).value)))
+            document.getElementById('statueName')!.textContent='';
+            document.getElementById('creationName')!.textContent='';
+            document.getElementById('inputPrice')!.textContent='';
+            document.getElementById('statueHeight')!.textContent='';
         } else if(!helyesYear) {
             document.getElementById('wrongYear')!.textContent='Hibás év, max az akt. év lehet!';
         } else if(!helyesPrice) {
             document.getElementById('wrongPrice')!.textContent='Hibás Ár, min 1 Ft kell hogy legyen!';
         } else if(!helyesHeight) {
             document.getElementById('wrongHeight')!.textContent='Hibás magasság, min 10 cm kell hogy legyen!';
+        } else {
+
         }
 
     });
