@@ -1,4 +1,4 @@
-import { Artwork } from "./artwork";
+import { Artwork } from "./Artwork";
 
 export class Statue implements Artwork{
 
