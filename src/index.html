@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szobrok</title>
 </head>
-<body>
+<body style="background-color:lightslategrey">
     <div style="display: block; text-align: center;">
         <h1>Új szobor létrehozása</h1>
         <label for="statueName">Szobor neve: </label>
         <input type="text" id="statueName">
+        <output id="wrongName"></output>
         <label for="creationYear">Készítés éve: </label>
         <input type="number" id="creationYear">
+        <output id="wrongYear"></output>
         <label for="priceInput">Kikiáltási ár: </label>
         <input type="number" id="priceInput">
-
+        <output id="wrongPrice"></output>
+        <label for="statueHeight">Szobor magassága: </label>
+        <input type="number" id="statueHeight">
+        <output id="wrongHeight"></output>
     </div>
 
     <script src="/dist/main.js"></script>
