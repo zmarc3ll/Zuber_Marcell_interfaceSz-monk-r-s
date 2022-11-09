@@ -10,7 +10,7 @@
     <div style="display: block; text-align: center;">
         <h1>Új szobor létrehozása</h1>
         <label for="statueName">Szobor neve: </label>
-        <input type="text" id="statueName">
+        <input type="text" id="statueName" required>
         <output id="wrongName"></output>
         <label for="creationYear">Készítés éve: </label>
         <input type="number" id="creationYear">
@@ -21,6 +21,9 @@
         <label for="statueHeight">Szobor magassága: </label>
         <input type="number" id="statueHeight">
         <output id="wrongHeight"></output>
+    </div>
+    <div style="text-align:center; margin-top: 50px;">
+        <button id="addStatue">Szobor hozzáadása</button>
     </div>
 
     <script src="/dist/main.js"></script>
