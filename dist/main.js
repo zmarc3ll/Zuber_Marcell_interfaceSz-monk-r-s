@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{document.getElementById("statueName"),document.getElementById("creationYear"),document.getElementById("priceInput"),document.getElementById("statueHeight")}))})();

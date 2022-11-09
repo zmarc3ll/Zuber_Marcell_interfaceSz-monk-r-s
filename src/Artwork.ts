@@ -1,4 +1,3 @@
-
 export interface Artwork {
     title: string;
     year: number;
